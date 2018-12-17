@@ -19,7 +19,7 @@ def word_substituter(string)
   newstring = string.split(" ")
   dic = dictionary
 
-  string.collect do |x|
+  newstring.collect do |x|
     if dic[x] != nil
       x = dic[x]
     end

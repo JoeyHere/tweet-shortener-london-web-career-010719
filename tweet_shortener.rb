@@ -25,5 +25,5 @@ def word_substituter(string)
     end
   end
 
-  string = newstring.join(" ")
+  string = string.join(" ")
 end

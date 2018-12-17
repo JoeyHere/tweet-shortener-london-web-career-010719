@@ -19,13 +19,12 @@ end
 def word_substituter(string)
   string = string.split(" ")
   dic = dictionary
-  newstring =[]
 
-  string.each do |x|
+string = string.collect do |x|
     if dic.keys.include?(x)
-      newstring << dic[x]
+       dic[x]
     else
-      newstring << x
+       x
     end
   end
 

@@ -20,13 +20,11 @@ def word_substituter(string)
   string = string.split(" ")
   dic = dictionary
 
-string = string.collect do |x|
+  string.collect do |x|
     if dic.keys.include?(x)
        dic[x]
     else
        x
     end
-  end
-
-  string = newstring.join(" ")
+  end.join(" ")
 end

@@ -18,8 +18,8 @@ end
 
 def word_substituter(string)
   string.split(" ").collect do |x|
-    if dictionary.keys.include?(x)
-       dictionary[x]
+    if dictionary.keys.include?(x.downcase)
+       dictionary[x.downcase]
     else
        x
     end

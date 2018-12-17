@@ -16,14 +16,14 @@ end
 
 
 def word_substituter(string)
-  newstring = string.split(" ")
+  string = string.split(" ")
   dic = dictionary
 
-  newstring.collect do |x|
+  string.each do |x|
     if dic.keys.include?(x)
-      dic[x]
+      x = dic[x]
     end
   end
 
-  newstring = newstring.join(" ")
+  string = newstring.join(" ")
 end

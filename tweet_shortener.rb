@@ -13,13 +13,20 @@ def dictionary
   }
 end
 
-dictionary.each do |key, value|
-  if word == string
-    return value
-  end
-end
-end
 
 
 def word_substituter(string)
+  string.split(" ")
+  convert = dictionary
   
+  string.collect do |x|
+    convert.each do |key, value|
+      if x == key
+        value
+      else 
+        x
+      end
+    end
+  end
+end
+

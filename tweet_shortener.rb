@@ -20,8 +20,8 @@ def word_substituter(string)
   dic = dictionary
 
   newstring.collect do |x|
-    if dic[x] != nil
-      x = dic[x]
+    if dic.keys.include?(x)
+      dic[x]
     end
   end
 

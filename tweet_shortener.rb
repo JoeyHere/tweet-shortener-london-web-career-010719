@@ -22,9 +22,9 @@ def word_substituter(string)
   converted.collect do |x|
     convert.each do |key, value|
       if x == key
-        value
+        x = value
       else
-        x
+        x = x
       end
     end
   end

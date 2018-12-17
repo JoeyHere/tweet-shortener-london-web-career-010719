@@ -26,5 +26,5 @@ def word_substituter(string)
   end
 
   string = string.join(" ")
- puts dic
+  dic
 end

@@ -21,8 +21,8 @@ def word_substituter(string)
   dic = dictionary
 
   string.collect do |x|
-    if dic.keys.include?(x)
-       dic[x]
+    if dictionary.keys.include?(x)
+       dictionary[x]
     else
        x
     end

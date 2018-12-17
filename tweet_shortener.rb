@@ -16,10 +16,10 @@ end
 
 
 def word_substituter(string)
-  string.split(" ")
+  converted = string.split(" ")
   convert = dictionary
 
-  string.collect do |x|
+  converted.collect do |x|
     convert.each do |key, value|
       if x == key
         value
@@ -29,5 +29,5 @@ def word_substituter(string)
     end
   end
 
-  string.join(" ")
+  converted.join(" ")
 end

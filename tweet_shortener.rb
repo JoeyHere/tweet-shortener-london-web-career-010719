@@ -1,5 +1,5 @@
 # Write your code here.
-def dictionary(word)
+def dictionary
   dictionary_hash = {
     "hello" => "hi"
     "to" => "2"
@@ -11,6 +11,7 @@ def dictionary(word)
     "at" => "@"
     "and" => "&"
   }
+end
 
 dictionary.each do |key, value|
   if word == string
@@ -20,4 +21,5 @@ end
 end
 
 
-def word_substituter(word)
+def word_substituter(string)
+  

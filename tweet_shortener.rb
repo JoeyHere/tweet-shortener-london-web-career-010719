@@ -17,10 +17,7 @@ end
 
 
 def word_substituter(string)
-  string = string.split(" ")
-  dic = dictionary
-
-  string.collect do |x|
+  string.split(" ").collect do |x|
     if dictionary.keys.include?(x)
        dictionary[x]
     else

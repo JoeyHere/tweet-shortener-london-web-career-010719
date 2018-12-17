@@ -29,6 +29,6 @@ def word_substituter(string)
     end
   end
 
-  converted.join(" ")
-  converted
+  converted = converted.join(" ")
+  
 end

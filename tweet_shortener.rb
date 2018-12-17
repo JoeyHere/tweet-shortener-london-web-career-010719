@@ -16,19 +16,15 @@ end
 
 
 def word_substituter(string)
-  converted = string.split(" ")
-  convert = dictionary
+  string = string.split(" ")
+  dic = dictionary
 
-  converted.collect do |x|
-    convert.each do |key, value|
-      if x == key
-        x = value
-      else
-        x = x
-      end
+  string.collect do |x|
+    if dic[x] != nil
+      x = dic[x]
     end
   end
 
-  converted = converted.join(" ")
+  string = string.join(" ")
 
 end

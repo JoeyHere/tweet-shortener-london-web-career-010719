@@ -18,15 +18,16 @@ end
 def word_substituter(string)
   string.split(" ")
   convert = dictionary
-  
+
   string.collect do |x|
     convert.each do |key, value|
       if x == key
         value
-      else 
+      else
         x
       end
     end
   end
-end
 
+  string.join(" ")
+end

@@ -11,7 +11,6 @@ def dictionary
     "at" => "@",
     "and" => "&",
   }
-  dictionary_hash
 end
 
 

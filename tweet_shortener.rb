@@ -12,7 +12,7 @@ def dictionary(word)
     "and" => "&"
   }
 
-dictionary.collect do |key, value|
+dictionary.each do |key, value|
   if word == string
     return value
   end

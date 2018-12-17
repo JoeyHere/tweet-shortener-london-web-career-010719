@@ -30,4 +30,5 @@ def word_substituter(string)
   end
 
   converted.join(" ")
+  converted
 end

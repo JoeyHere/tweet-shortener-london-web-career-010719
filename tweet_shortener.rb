@@ -16,7 +16,7 @@ end
 
 
 def word_substituter(string)
-  string = string.split(" ")
+  newstring = string.split(" ")
   dic = dictionary
 
   string.collect do |x|
@@ -25,6 +25,5 @@ def word_substituter(string)
     end
   end
 
-  string = string.join(" ")
-  dic
+  newstring = newstring.join(" ")
 end
